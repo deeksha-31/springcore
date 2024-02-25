@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+            
+           <bean id="student" class="edu.jsp.dibysetter.bean.Student">
+            <property name="id" value="101"></property>
+             <property name="name" value="Nokia"></property>
+              <property name="age" value="3300"></property>
+              <property name="subject">
+              <list>
+              <value>Subject 1</value>
+              <value>Subject 2</value>
+              <value>Subject 3</value>
+              </list>
+              </property>
+              
+           </bean>
+           
+          
+</beans>

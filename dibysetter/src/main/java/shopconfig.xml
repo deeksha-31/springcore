@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+            
+           <bean id="shop" class="edu.jsp.dibysetter.bean.Shop">
+           
+            <property name="id" value="1"></property>
+            
+             <property name="name" value="Bhangar Wala"></property>
+             
+              <property name="items" >
+              
+              <map>
+              	<entry key="Shoes" value="150"></entry>
+              	<entry key="Ganja Heroine" value="2000"></entry>
+              	<entry key="Shawl" value="200"></entry>
+              </map>
+              
+              </property>
+             </bean>
+           
+</beans>
