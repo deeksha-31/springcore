@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<bean id="hotel1" class="edu.jsp.dibyconstructor.bean.Hotel"></bean>
+
+
+	<bean id="hotel2" class="edu.jsp.dibyconstructor.bean.Hotel">
+		<constructor-arg >
+			<map>
+				<entry key="VEG THALI" value="80"></entry>
+				<entry key="NON-VEG THALI" value="180"></entry>
+				<entry key="EGG THALI" value="120"></entry>
+			</map>
+		</constructor-arg>
+	</bean>
+	
+	<bean id="hotel3" class="edu.jsp.dibyconstructor.bean.Hotel">
+	 <constructor-arg value="1"></constructor-arg>
+	  <constructor-arg value="DESI DHABA"></constructor-arg>
+		<constructor-arg >
+			<map>
+				<entry key="VEG THALI" value="80"></entry>
+				<entry key="NON-VEG THALI" value="180"></entry>
+				<entry key="EGG THALI" value="120"></entry>
+			</map>
+		</constructor-arg>
+	</bean>
+           
+</beans>
